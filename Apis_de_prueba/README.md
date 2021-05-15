@@ -1,26 +1,8 @@
 # Desarrollo de apis y web services con spring boot 
+### Ejemplos de apis REST construídas por mi para aprender  Spring Boot
 
-### Ejemplos de apis REST construídas con Spring Boot
+En este repositorio se encuentran todas las apis rest que he  construido de manera autodidacta
 
-
-
-
-#### Contenido del repositorio
-
-<!---
-- `basic`: ejemplo básico que contiene un proyecto `gradle` con `SpringBoot` y el código para crear un simple endpoint REST 
-- `with-db`: se añade conexión a una base de datos en `MongoDB` 
-- `with-auth`: se añade autenticación con `JWT`
-- `with-hidden-fields`: se configura `Jackson` para ocultar los campos ocultos
-- `with-swagger`: se añade documentación con `Swagger`
-- `with-hateoas`: se añade ennlazado con `HATEOAS`
-- `with-patch`: se añade un ejemplo de uso del método PATCH HTTP 
-- `with-advanced-auth`: se añade un ejemplo de autenticación avanzada con precondiciones para un servicio
--->
-
-### Tecnologías
-
-***Tecnologias  usadas para la contrucion de las apis***
 
 - [Spring Boot](https://spring.io/projects/spring-boot) aquí podéis ver las actualizaciones incorporadas en la [versión más reciente 2.2](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.2-Release-Notes)
 - [Gradle](https://gradle.org/) / [Maven](https://maven.apache.org/)
@@ -29,20 +11,15 @@
 
 
 ### Herramientas
+***Herramientas que se pueden usar para probarlas ***
 
-***Herramientas usadas para la contrucion y testeo  de las apis***
-- [SpringBoot Initializr](https://start.spring.io/): Generador de proyectos de Spring con Gradle/Maven. Permite seleccionar las dependencias deseadas y genera automáticamente el *scaffolding* del proyecto.
 - [Postman](https://www.getpostman.com/): Cliente de APIs que nos permitirá realizar peticiones (y ver las respuestas) a la aplicación REST que vamos a construir.
 - [IntellIJ](https://www.jetbrains.com/idea/): IDE recomendado.
 
 
-### Enlaces
-
-**Paginas que pueden de ser de ayuda**
-- [SpringBoot Basics](https://www.baeldung.com/spring-boot): Tutoriales básicos de spring boot
-- [REST con SpringBoot](https://www.baeldung.com/rest-with-spring-series): Serie de tutoriales de REST con SpringBoot
-- [API REST básica](https://www.baeldung.com/building-a-restful-web-service-with-spring-and-java-based-configuration): API REST básica con SpringBoot
-- [SpringBootGradle IntellIJ](https://medium.com/@ziatheonlyone/spring-rest-api-part-1-configuring-spring-boot-project-intellij-idea-gradle-385d26e01429): Como crear un proyecto con Gradle / SpringBoot en IntellIJ
+### Lista de proyectos realizados
+***Pendiente aun :V***
+[.\rest_service]
 
 <!-- 
 
