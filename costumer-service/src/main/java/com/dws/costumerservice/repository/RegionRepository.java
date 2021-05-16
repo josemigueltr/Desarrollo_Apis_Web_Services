@@ -32,29 +32,28 @@ public class RegionRepository {
     }
 
     public RespuestaApi createRegion(Region region) {
-        System.out.println(region.getRegion());
-        System.out.println(region.getId());
-        jdbcTemplate.update("INSERT INTO region (region) VALUES('" + region.getRegion() + "');");
+        String query=String.format("INSERT INTO region (region) VALUES('%s');",region.getRegion());
+        jdbcTemplate.update(query);
         RespuestaApi msg = new RespuestaApi();
         msg.setMessage("La región ha sido registrada");
         return msg;
     }
 
     public RespuestaApi updateRegion(Region region, int id) {
-        jdbcTemplate.update("UPDATE region SET region = '" + region.getRegion() + "' WHERE id = " + id + ";");
+        String query=String.format("UPDATE region SET region = '%s' WHERE id =  %d ;",region.getRegion(),id);
+        jdbcTemplate.update(query);
         RespuestaApi msg = new RespuestaApi();
         msg.setMessage("La región ha sido actualizada");
         return msg;
     }
 
     public RespuestaApi deleteRegion(int id) {
-        jdbcTemplate.update("DELETE FROM region WHERE id = " + id + ";");
+        String query=String.format("DELETE FROM region WHERE id = %d;",id);
+        jdbcTemplate.update(query);
         RespuestaApi msg = new RespuestaApi();
         msg.setMessage("La región ha sido eliminada");
         return msg;
     }
-
-
     }
 
 
